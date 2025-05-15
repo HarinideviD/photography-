@@ -45,7 +45,7 @@
 }
 .main{
     width: 100%;
-    background: url(Example/boat-164977_1280.jpg);
+    background: url(images\Example/boat-164977_1280.jpg);
     background-position: center;
    background-size: cover;
     height: 735px;
@@ -66,7 +66,7 @@
     color: bisque;
 }
 body{
-    background-image: url(Example/background-6845828_1280.png);
+    background-image: url(images\Example/background-6845828_1280.png);
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
@@ -77,7 +77,7 @@ body{
     text-decoration: none;
     font-style: italic;
     font-size: 20px;
-    background-image: url(Example/fern.jpg);
+    background-image: url(images\Example/fern.jpg);
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
