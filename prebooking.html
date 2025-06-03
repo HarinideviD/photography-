@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prebooking - Photography</title>
+  <style>
+    body {
+      font-family:'Josefin sans', sans-serif;
+      margin: 0;
+      background: #dcd6d2;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 4em;line-height: 1em;text-align: center;font-family:Abril Fatface;font-weight:400;font-style:normal
+    }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #222;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #515151;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: Abril Fatface;
+    }
+    .btn:hover {
+      background: #7d7c7c;
+    }
+    .form-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      margin: auto;
+    }
+    .form-card h2 {
+    font-family:Abril Fatface;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    .form-submit {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Prebooking: What We Offer</h1>
+    <div class="category-grid">
+
+      <div class="card">
+        <img src="Example/maternity.jpg" alt="Maternity Shoot" />
+        <div class="card-content">
+          <h3>Maternity Shoot</h3>
+          <p>3-hour session, 2 costumes, indoor/outdoor location.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Example/baby6.jpg" alt="Baby/Kids Shoot" />
+        <div class="card-content">
+          <h3>Baby/Kids Shoot</h3>
+          <p>2-hour playful session with props, 1-2 outfits, themed setup included.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Example/couple.jpg" alt="Couple Shoot" />
+        <div class="card-content">
+          <h3>Couple Photo Shoot</h3>
+          <p>2.5-hour session, 2 costumes, romantic outdoor location and props.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Example/marriage.jpg" alt="Marriage Shoot" />
+        <div class="card-content">
+          <h3>Marriage Shoot</h3>
+          <p>8-hour wedding day coverage, album included, custom styling on request.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Example/valentine.jpg" alt="Valentine's Day Shoot" />
+        <div class="card-content">
+          <h3>Valentine's Day Shoot</h3>
+          <p>2-hour couple session, 1 outfit change, themed props and setup included.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Example/combo1.jpg" alt="Combo Package 1" />
+        <div class="card-content">
+          <h3>Combo: Pre-Wedding + Wedding</h3>
+          <p>Pre-wedding shoot + full wedding day coverage, albums and styling included.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Example/combo3.jpg" alt="Combo Package 2" />
+        <div class="card-content">
+          <h3>Combo: Maternity + Newborn</h3>
+          <p>2 sessions (Maternity & Newborn), 3 costume changes, props, and album included.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Example/combo2.jpg" alt="Combo Package 3" />
+        <div class="card-content">
+          <h3>Combo: Family + Kids Outdoor</h3>
+          <p>Family and kids outdoor shoot, natural light themes, playful settings and editing.</p>
+          <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    
+     <section id="booking-form" style="margin-top: 4rem;">
+      <div class="form-card">
+        <h2>Booking Form</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="package">Select Package</label>
+            <select id="package" name="package" required>
+              <option value="maternity">Maternity Shoot</option>
+              <option value="baby">Baby/Kids Shoot</option>
+              <option value="couple">Couple Photo Shoot</option>
+              <option value="marriage">Marriage Shoot</option>
+              <option value="valentine">Valentine's Day Shoot</option>
+              <option value="combo1">Combo: Pre-Wedding + Wedding</option>
+              <option value="combo2">Combo: Maternity + Newborn</option>
+              <option value="combo3">Combo: Family + Kids Outdoor</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn">Submit Booking</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
